@@ -118,17 +118,18 @@ python src/classical_lqr_control.py
 
 ## 📂 Project Structure
 
-InversePendulum-RL/  
-├── src/  
-│ ├── train_ppo.py                       # Train PPO RL agent  
-│ ├── evaluate_ppo.py                    # Test trained model  
-│ ├── classical_pid.py                   # PID controller  
-│ └── classical_lqr.py                   # LQR state feedback  
-├── models/                              # Saved RL models (*.zip)  
-├── results/                             # Plots, logs, videos  
-├── requirements.txt                     # Dependencies  
-├── setup.bat                            # Windows setup  
-└── README.md  
+- InversePendulum-RL
+  - src
+    - train_ppo.py — Train PPO RL agent
+    - evaluate_ppo.py — Test trained model
+    - classical_pid.py — PID controller
+    - classical_lqr.py — LQR state feedback
+  - models — Saved RL models (*.zip)
+  - results — Plots, logs, videos
+  - requirements.txt — Dependencies
+  - setup.bat — Windows setup
+  - README.md
+
 
 ---
 
