@@ -87,43 +87,31 @@ Where `K` is tuned for the linearized system. Offers stability but needs correct
 
 ### 1. Setup (Windows)
 ```
-
 .\setup.bat
-
 ```
 Creates `venv/` and installs modules.
 
 Activate:
 ```
-
 .\venv\Scripts\activate
-
 ```
 
 ### 2. Train RL Model
 ```
-
 python src/train_ppo.py
-
 ```
 
 ### 3. Watch Trained Agent
 ```
-
 python src/evaluate_ppo.py
-
 ```
 
 ### 4. Use Classical Controllers
 ```
-
 python src/classical_pid_control.py
-
 ```
 ```
-
 python src/classical_lqr_control.py
-
 ```
 
 ---
