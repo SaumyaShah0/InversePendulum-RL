@@ -70,7 +70,7 @@ Saved model: `models/pendulum_ppo.zip`
 Uses error: `target_angle (0) – theta`  
 Control law:
 
-$$u = K_p \cdot \text{error} + K_i \int{\text{error}\,dt} + K_d \frac{d(\text{error})}{dt}$$
+$$u = K_p \cdot \text{error} + K_i \int{\text{error}\cdot dt} + K_d \frac{d(\text{error})}{dt}$$
 
 Simple controller; works for small deviations, struggles with large disturbances.
 
@@ -118,19 +118,20 @@ python src/classical_lqr_control.py
 
 ## 📂 Project Structure
 
-```Text
-InversePendulum-RL/
-├── src/
-│ ├── train_ppo.py           # Train PPO RL agent
-│ ├── evaluate_ppo.py        # Test trained model
-│ ├── classical_pid.py       # PID controller
-│ └── classical_lqr.py       # LQR state feedback
-├── models/                  # Saved RL models (*.zip)
-├── results/                 # Plots, logs, videos
-├── requirements.txt         # Dependencies
-├── setup.bat                # Windows setup
-└── README.md
+```text
+InversePendulum-RL/  
+├── src/  
+│ ├── train_ppo.py           # Train PPO RL agent  
+│ ├── evaluate_ppo.py        # Test trained model  
+│ ├── classical_pid.py       # PID controller  
+│ └── classical_lqr.py       # LQR state feedback  
+├── models/                  # Saved RL models (*.zip)  
+├── results/                 # Plots, logs, videos  
+├── requirements.txt         # Dependencies  
+├── setup.bat                # Windows setup  
+└── README.md  
 ```
+
 ---
 
 ## 📊 Results
@@ -166,7 +167,7 @@ RL achieves the most robust balancing under disturbances.
 
 ## 🏆 Credits
 
-Project by: Saumya Shah
+Project by: Saumya Shah  
 For learning and research in control systems + AI.
 
 ---
