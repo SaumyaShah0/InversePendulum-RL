@@ -166,7 +166,7 @@ RL achieves the most robust balancing under disturbances.
 
 ## 🏆 Credits
 
-Project by: Saumya Shah & Astha  
+Project by: Saumya Shah
 For learning and research in control systems + AI.
 
 ---
